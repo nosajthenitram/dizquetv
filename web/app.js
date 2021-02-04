@@ -4,8 +4,9 @@ require('./ext/lazyload')(angular)
 require('./ext/dragdrop')
 require('./ext/angularjs-scroll-glue')
 require('angular-vs-repeat');
+require('ng-pattern-restrict')
 
-var app = angular.module('myApp', ['ngRoute', 'vs-repeat', 'angularLazyImg', 'dndLists', 'luegg.directives'])
+var app = angular.module('myApp', ['ngRoute', 'vs-repeat', 'angularLazyImg', 'dndLists', 'luegg.directives', 'ngPatternRestrict'])
 
 app.service('plex',             require('./services/plex'))
 app.service('dizquetv',         require('./services/dizquetv'))
